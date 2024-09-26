@@ -134,18 +134,30 @@
 
             <button class="btn btn-text p-0 mb-3" id="addRowButton" style="font-weight: 600;">+ Next Day</button>
 
-            <div class="w-100  mb-5" style="font-weight: 600;">Add image</div>
-            <div class="container">
-                <div class="box">1</div>
-                <div class="box">2</div>
-                <div class="box">3</div>
-                <div class="box">4</div>
-                <div class="box">5</div>
-                <div class="box">6</div>
+            <div class="w-100  mb-3" style="font-weight: 600;">Add image</div>
+            <div class="row gap-2 justify-content-between px-2">
+                <label for="img" class="box col-3">
+                    <input id="img" type="file" hidden>
+                </label>
+                <label for="img" class="box col-3">
+                    <input id="img" type="file" hidden>
+                </label>
+                <label for="img" class="box col-3">
+                    <input id="img" type="file" hidden>
+                </label>
+                <label for="img" class="box col-3">
+                    <input id="img" type="file" hidden>
+                </label>
+                <label for="img" class="box col-3">
+                    <input id="img" type="file" hidden>
+                </label>
+                <label for="img" class="box col-3">
+                    <input id="img" type="file" hidden>
+                </label>
             </div>
 
             <div class="d-flex flex-row justify-content-center">
-                <input class="btn btn-primary text-center mt-5 mb-2 fs-5 fw-semibold px-4" type="submit" id="submit" class="btn btn-primary" value="Save" data-bs-toggle="modal" data-bs-target="#confirmationModal2"></input>
+                <input class="btn btn-danger text-center mt-5 mb-2 fs-5 fw-semibold px-4" type="submit" id="submit" class="btn btn-primary" value="Save" data-bs-toggle="modal" data-bs-target="#confirmationModal2"></input>
             </div>
 
             <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
@@ -190,28 +202,11 @@
         border: 2px dashed #333;
     }
 
-    .container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        /* 3 equal-width columns */
-        grid-template-rows: repeat(2, 1fr);
-        /* 2 equal-height rows */
-        height: 100vh;
-        /* Full screen height */
-        gap: 10px;
-        /* Optional: space between boxes */
-    }
-
     .box {
-        background-color: #333;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 20px;
-        font-weight: bold;
+        border: 2px dashed #333;
         aspect-ratio: 1 / 1;
-        /* Maintain square aspect ratio */
+        margin: 3px;
+        margin-bottom: 10px;
     }
 </style>
 
